@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home - ironadvice.com</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@mynameisiron">
+    <meta name="twitter:title" content="ironadvice.com | builder of starships">
+    <meta name="twitter:description" content="i write the present and the future.">
+    <!-- Instagram Meta Tags - Instagram uses Open Graph tags from Facebook -->
+    <meta property="og:url" content="https://ironadvice.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ironadvice.com | Real talk that isn’t motivated by clicks.">
+    <meta property="og:description" content="i write the present and the future.">
+    <meta property="og:image" content="https://ironadvice.com/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            margin-right: 2em;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(12, 12, 12);
+            color: #7e7e7e;
+            font-size: medium;
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-family: "Funnel Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a:hover {
+            color: rgb(92, 13, 13);
+        }
+
+        img {
+            max-width: 250px !important;
+            max-height: 250px !important;
+            width: auto !important;
+            height: auto !important;
+            padding-bottom: 2em;
+        }
+
+        .main-content {
+            max-width: 30em;
+        }
+
+        .intro-text-area {
+            padding: 1em;
+            /* text-align: left; */
+            font-size: 1.5em;
+            text-justify: center;
+        }
+
+        .main-links {
+            width: max-content;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .main-links a {
+            text-decoration-line: none;
+            font-weight: 900;
+        }
+
+        .main-links a:hover {
+            color: rgb(232, 49, 12);
+        }
+
+        .links ul {
+            text-align: center;
+            list-style: none;
+            text-justify: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .links li {
+            display: inline-block;
+            align-items: center;
+            text-align: center;
+            font-size: medium;
+            margin-left: .5em;
+            padding-right: 25px;
+        }
+
+        .links li a {
+            text-decoration-line: none;
+        }
+
+        .links li a:hover {
+            cursor: pointer;
+        }
+
+        .links>.disabled {
+            color: #595959 !important;
+            text-decoration: line-through;
+            opacity: 50%
+        }
+
+        .links>.disabled:hover {
+            opacity: 100%;
+            cursor: not-allowed;
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .breathing-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            padding: 1rem;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-family: "Funnel Sans", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .breathing-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+            opacity: 0.5;
+            animation: breathingGlow 3s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        .breathing-button:hover {
+            background-color: #111;
+        }
+
+        @keyframes breathingGlow {
+            0% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+        }
+
+        .jitter-rotate {
+            display: inline-block;
+            animation: jitterRotate 0.1s infinite;
+        }
+
+        @keyframes jitterRotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-1deg);
+            }
+
+            50% {
+                transform: rotate(1deg);
+            }
+
+            75% {
+                transform: rotate(-0.5deg);
+            }
+
+            100% {
+                transform: rotate(0.5deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        <img src="images/logo.png" class="jitter-rotate"></img></br>
+        <div class="intro-text-area">
+            Big brother advice for all.</br>
+            <span style="font-weight: 600" class="jitter-rotate">Real talk</span> that isn’t motivated by clicks.</br>
+        </div>
+        <div class="button-wrapper">
+            <a href="https://www.google.com" class="breathing-button">LET'S TALK</a>
+        </div>
+
+        <ul class="links">
+            <li><a href="https://twitter.com/ironadvice">[ X ]</a></li>
+            <li><a href="https://instagram.com/ironadvice">[ INSTAGRAM ]</a></li>
+            <li class="disabled" alt="blog link coming soon" aria-placeholder="Coming soon!">[ADVICE]</li>
+        </ul>
+        <ul class="links">
+
+            <li class="disabled" alt="about page link coming soon" aria-placeholder="coming soon">[ABOUT]</li>
+        </ul>
+    </div>
+</body>
+
+</html>
