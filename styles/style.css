@@ -160,7 +160,7 @@ a:hover {
 }
 
 /* Logo */
-/ .jitter-rotate {
+.jitter-rotate {
     display: inline-block;
     animation: jitterRotate 0.1s infinite;
 }
